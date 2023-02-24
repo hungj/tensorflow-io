@@ -98,7 +98,7 @@ constexpr const char* const AVRO_SNAPPY_CODEC = "snappy";
 using Magic = std::array<uint8_t, 4>;
 static const Magic magic = { { 'O', 'b', 'j', '\x01' } };
 
-using Metadata = std::map<std::string, std::vector<uint8_t>>;
+using AvroMetadata = std::map<std::string, std::vector<uint8_t>>;
 
 class AvroBlockReader {
   public:
@@ -163,7 +163,7 @@ class AvroBlockReader {
        throw avro::Exception("Invalid data file. Magic does not match.");
      }
      avro::decode(*decoder_, metadata_);
-     Metadata::const_iterator it = metadata_.find(AVRO_SCHEMA_KEY);
+     AvroMetadata::const_iterator it = metadata_.find(AVRO_SCHEMA_KEY);
      if (it == metadata_.end()) {
        throw avro::Exception("No schema in metadata");
      }
@@ -194,7 +194,7 @@ class AvroBlockReader {
      avro::decode(*decoder_, sync_marker_);
    }
 
-   Metadata metadata_;
+   AvroMetadata metadata_;
    avro::DataFileSync sync_marker_;
    avro::Codec codec_;
 
