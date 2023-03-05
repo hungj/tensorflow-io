@@ -10,8 +10,8 @@ from tensorflow.python.data.ops import dataset_ops
 from tensorflow.python.framework import errors
 from tensorflow.python.framework import tensor_util
 
-from tensorflow_io.core.python.ops import core_ops
-from tensorflow_io.core.python.experimental.fds.features import \
+from tensorflow_io.python.ops import core_ops
+from tensorflow_io.python.experimental.fds.features import \
     DenseFeature, SparseFeature, VarlenFeature
 
 # Argument default values used in FDS Dataset.
@@ -106,8 +106,8 @@ class FDSDataset(dataset_ops.DatasetSource):
     >>> import avro.schema
     >>> from avro.datafile import DataFileWriter
     >>> from avro.io import DatumWriter
-    >>> from tensorflow_io.core.python.experimental.fds.dataset import FDSDataset
-    >>> from tensorflow_io.core.python.experimental.fds.features import DenseFeature
+    >>> from tensorflow_io.python.experimental.fds.dataset import FDSDataset
+    >>> from tensorflow_io.python.experimental.fds.features import DenseFeature
     >>> example_path = os.path.join(tempfile.gettempdir(), "example.avro")
     >>> np.random.seed(0)
 
@@ -162,7 +162,7 @@ class FDSDataset(dataset_ops.DatasetSource):
           features: A feature configuration dict with feature name as key and
             FDS feature as value. FDS features can be one of the DenseFeature,
             SparseFeature, or VarlenFeature. See
-            tensorflow_io.core.python.experimental.fds.features for more details.
+            tensorflow_io.python.experimental.fds.features for more details.
           drop_remainder: (Optional.) A `tf.bool` scalar tf.Tensor, representing
             whether the last batch should be dropped in the case it has fewer
             than batch_size elements. The default behavior is not to drop the

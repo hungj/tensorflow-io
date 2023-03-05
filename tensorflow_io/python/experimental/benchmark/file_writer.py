@@ -75,7 +75,7 @@ class FileWriter(object, metaclass=abc.ABCMeta):
       writer_path = os.path.join(self._data_cache_path, data_source_path, writer_dir)
       if os.path.exists(writer_path):
         return writer_path
-      from tensorflow_io.core.python.experimental.benchmark.tf_record_writer import TFRecordWriter
+      from tensorflow_io.python.experimental.benchmark.tf_record_writer import TFRecordWriter
       with TFRecordWriter() as tf_writer:
         tf_record_cache_dir = os.path.join(self._data_cache_path, data_source_path, tf_writer.hash_code())
         if not os.path.exists(tf_record_cache_dir):

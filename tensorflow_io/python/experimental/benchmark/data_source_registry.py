@@ -20,15 +20,15 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.python.framework import registry
 
-from tensorflow_io.core.python.experimental.benchmark.data_source import \
+from tensorflow_io.python.experimental.benchmark.data_source import \
   DataSource
-from tensorflow_io.core.python.experimental.benchmark.generator.\
+from tensorflow_io.python.experimental.benchmark.generator.\
   tensor_generator import IntTensorGenerator, \
     FloatTensorGenerator, WordTensorGenerator, BoolTensorGenerator
-from tensorflow_io.core.python.experimental.benchmark.generator.\
+from tensorflow_io.python.experimental.benchmark.generator.\
   sparse_tensor_generator import IntSparseTensorGenerator, FloatSparseTensorGenerator, \
     WordSparseTensorGenerator, BoolSparseTensorGenerator, ValueDistribution
-from tensorflow_io.core.python.experimental.benchmark.generator.\
+from tensorflow_io.python.experimental.benchmark.generator.\
   varlen_tensor_generator import DimensionDistribution, IntVarLenTensorGenerator, \
     FloatVarLenTensorGenerator, WordVarLenTensorGenerator, BoolVarLenTensorGenerator, \
       DIM_DISTRIBUTION_TO_RANGE

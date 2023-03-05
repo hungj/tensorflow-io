@@ -8,9 +8,9 @@ from avro.schema import Parse as parse
 from avro.datafile import DataFileWriter
 from avro.io import DatumWriter
 
-from tensorflow_io.core.python.experimental.benchmark.file_writer import FileWriter
-from tensorflow_io.core.python.experimental.benchmark.generator.varlen_tensor_generator import VarLenTensorGeneratorBase
-from tensorflow_io.core.python.experimental.fds.features import DenseFeature, \
+from tensorflow_io.python.experimental.benchmark.file_writer import FileWriter
+from tensorflow_io.python.experimental.benchmark.generator.varlen_tensor_generator import VarLenTensorGeneratorBase
+from tensorflow_io.python.experimental.fds.features import DenseFeature, \
     SparseFeature, VarlenFeature
 
 

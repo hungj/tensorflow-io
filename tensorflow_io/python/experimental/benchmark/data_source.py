@@ -16,7 +16,7 @@
 
 import hashlib
 
-from tensorflow_io.core.python.experimental.benchmark.hash_util \
+from tensorflow_io.python.experimental.benchmark.hash_util \
   import int_to_bytes
 
 class DataSource:
