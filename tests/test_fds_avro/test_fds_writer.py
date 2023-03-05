@@ -21,23 +21,23 @@ import shutil
 import tempfile
 import tensorflow as tf
 
-from tensorflow_io.core.python.experimental.benchmark import file_writer
-from tensorflow_io.core.python.experimental.benchmark.data_source import \
+from tensorflow_io.python.experimental.benchmark import file_writer
+from tensorflow_io.python.experimental.benchmark.data_source import \
   DataSource
-from tensorflow_io.core.python.experimental.benchmark.generator.\
+from tensorflow_io.python.experimental.benchmark.generator.\
   tensor_generator import IntTensorGenerator, FloatTensorGenerator, \
     WordTensorGenerator, BoolTensorGenerator
-from tensorflow_io.core.python.experimental.benchmark.generator. \
+from tensorflow_io.python.experimental.benchmark.generator. \
   sparse_tensor_generator import ValueDistribution, IntSparseTensorGenerator, \
   FloatSparseTensorGenerator, WordSparseTensorGenerator, \
   BoolSparseTensorGenerator
-from tensorflow_io.core.python.experimental.benchmark.generator. \
+from tensorflow_io.python.experimental.benchmark.generator. \
   varlen_tensor_generator import IntVarLenTensorGenerator, \
   FloatVarLenTensorGenerator, WordVarLenTensorGenerator, \
   BoolVarLenTensorGenerator
-from tensorflow_io.core.python.experimental.fds.fds_writer import \
+from tensorflow_io.python.experimental.fds.fds_writer import \
   FDSWriter
-from tensorflow_io.core.python.experimental.benchmark.tf_record_writer import \
+from tensorflow_io.python.experimental.benchmark.tf_record_writer import \
   TFRecordWriter
 from tests.test_fds_avro.utils.fds_benchmark_utils import \
   get_dataset, get_features_from_data_source

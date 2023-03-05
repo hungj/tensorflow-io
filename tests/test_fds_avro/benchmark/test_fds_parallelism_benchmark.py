@@ -17,9 +17,9 @@
 import pytest
 import tensorflow as tf
 
-from tensorflow_io.core.python.experimental.benchmark.data_source import \
+from tensorflow_io.python.experimental.benchmark.data_source import \
   DataSource
-from tensorflow_io.core.python.experimental.benchmark.data_source_registry import \
+from tensorflow_io.python.experimental.benchmark.data_source_registry import \
   LARGE_NUM_RECORDS
 from tests.test_fds_avro.utils.fds_benchmark_utils import \
   run_fds_benchmark_from_data_source

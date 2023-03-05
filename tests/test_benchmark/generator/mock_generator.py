@@ -16,7 +16,7 @@
 
 import tensorflow as tf
 
-from tensorflow_io.core.python.experimental.benchmark.generator.generator_base \
+from tensorflow_io.python.experimental.benchmark.generator.generator_base \
   import Generator
 
 

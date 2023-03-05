@@ -17,7 +17,7 @@
 import pytest
 import os
 
-from tensorflow_io.core.python.experimental.benchmark.data_source_registry import \
+from tensorflow_io.python.experimental.benchmark.data_source_registry import \
   ALL_TYPES_DATA_SOURCE_NAME, get_data_source_from_registry
 
 from tests.test_fds_avro.utils.fds_benchmark_utils import \

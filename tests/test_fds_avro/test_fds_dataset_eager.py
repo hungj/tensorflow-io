@@ -15,9 +15,9 @@ from avro.io import DatumWriter
 from parameterized import parameterized
 from tensorflow.python.framework import errors
 from tests.test_parse_avro_eager import AvroDatasetTestBase, AvroRecordsToFile
-from tensorflow_io.core.python.ops import core_ops
-from tensorflow_io.core.python.experimental.fds.dataset import FDSDataset
-from tensorflow_io.core.python.experimental.fds.features import DenseFeature, \
+from tensorflow_io.python.ops import core_ops
+from tensorflow_io.python.experimental.fds.dataset import FDSDataset
+from tensorflow_io.python.experimental.fds.features import DenseFeature, \
     SparseFeature, VarlenFeature
 
 "This file holds the test cases for FDSDataset."

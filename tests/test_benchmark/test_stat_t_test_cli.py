@@ -19,7 +19,7 @@ import scipy
 import pytest
 from pytest import approx
 
-from tensorflow_io.core.python.experimental.benchmark.stat_t_test_cli import \
+from tensorflow_io.python.experimental.benchmark.stat_t_test_cli import \
   run_welchs_ttest, MEAN, STDDEV, ROUNDS
 
 

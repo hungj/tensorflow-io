@@ -16,7 +16,7 @@
 
 import pytest
 
-from tensorflow_io.core.python.experimental.benchmark.hash_util import \
+from tensorflow_io.python.experimental.benchmark.hash_util import \
   int_to_bytes
 
 

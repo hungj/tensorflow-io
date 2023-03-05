@@ -20,8 +20,8 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.python.framework import errors
 
-from tensorflow_io.core.python.experimental.benchmark.generator import sparse_util
-from tensorflow_io.core.python.experimental.benchmark.generator.\
+from tensorflow_io.python.experimental.benchmark.generator import sparse_util
+from tensorflow_io.python.experimental.benchmark.generator.\
   sparse_tensor_generator import IntSparseTensorGenerator, FloatSparseTensorGenerator, ValueDistribution, \
     WordSparseTensorGenerator, BoolSparseTensorGenerator
 

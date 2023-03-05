@@ -19,7 +19,7 @@ import pytest
 import tensorflow as tf
 from tensorflow.python.framework import errors
 
-from tensorflow_io.core.python.experimental.benchmark.generator.\
+from tensorflow_io.python.experimental.benchmark.generator.\
   tensor_generator import IntTensorGenerator, FloatTensorGenerator, \
     WordTensorGenerator, BoolTensorGenerator
 

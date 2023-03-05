@@ -17,7 +17,7 @@
 import pytest
 import tensorflow as tf
 
-from tensorflow_io.core.python.experimental.benchmark.data_source_registry import \
+from tensorflow_io.python.experimental.benchmark.data_source_registry import \
   TensorType, SMALL_NUM_RECORDS, SINGLE_PARTITION
 from tests.test_benchmark.benchmark.utils.benchmark_utils import \
   run_tf_record_benchmark

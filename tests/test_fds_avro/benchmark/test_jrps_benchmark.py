@@ -19,15 +19,15 @@ import os
 import pytest
 import tensorflow as tf
 
-from tensorflow_io.core.python.experimental.benchmark.data_source import \
+from tensorflow_io.python.experimental.benchmark.data_source import \
     DataSource
-from tensorflow_io.core.python.experimental.benchmark.data_source_registry import \
+from tensorflow_io.python.experimental.benchmark.data_source_registry import \
     SMALL_NUM_RECORDS
-from tensorflow_io.core.python.experimental.benchmark.generator.tensor_generator import \
+from tensorflow_io.python.experimental.benchmark.generator.tensor_generator import \
    IntTensorGenerator, FloatTensorGenerator, WordTensorGenerator
-from tensorflow_io.core.python.experimental.benchmark.generator.sparse_tensor_generator import \
+from tensorflow_io.python.experimental.benchmark.generator.sparse_tensor_generator import \
    FloatSparseTensorGenerator, ValueDistribution
-from tensorflow_io.core.python.experimental.fds.fds_writer import \
+from tensorflow_io.python.experimental.fds.fds_writer import \
     FDSWriter
 from tests.test_benchmark.benchmark.utils.benchmark_utils import benchmark_func
 from tests.test_fds_avro.utils.fds_benchmark_utils import \

@@ -2,7 +2,7 @@ import pytest
 import re
 import tensorflow as tf
 
-from tensorflow_io.core.python.experimental.fds.features import DenseFeature, \
+from tensorflow_io.python.experimental.fds.features import DenseFeature, \
     SparseFeature, VarlenFeature, FDS_SUPPORTED_DTYPES
 
 @pytest.mark.parametrize(

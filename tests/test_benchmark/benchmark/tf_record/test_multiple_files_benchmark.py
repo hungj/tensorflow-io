@@ -16,9 +16,9 @@
 
 import pytest
 
-from tensorflow_io.core.python.experimental.benchmark.data_source import \
+from tensorflow_io.python.experimental.benchmark.data_source import \
   DataSource
-from tensorflow_io.core.python.experimental.benchmark.data_source_registry import \
+from tensorflow_io.python.experimental.benchmark.data_source_registry import \
   LARGE_NUM_RECORDS, MULTIPLE_PARTITION, FILE_PARALLELISM
 from tests.test_benchmark.benchmark.utils.benchmark_utils import \
   run_tf_record_benchmark_from_data_source, MIXED_TYPES_SCENARIO

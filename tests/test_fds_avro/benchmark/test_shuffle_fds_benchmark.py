@@ -18,11 +18,11 @@ import glob
 import os
 import pytest
 
-from tensorflow_io.core.python.experimental.benchmark.data_source import \
+from tensorflow_io.python.experimental.benchmark.data_source import \
   DataSource
-from tensorflow_io.core.python.experimental.benchmark.data_source_registry import \
+from tensorflow_io.python.experimental.benchmark.data_source_registry import \
   SMALL_NUM_RECORDS
-from tensorflow_io.core.python.experimental.fds.fds_writer import \
+from tensorflow_io.python.experimental.fds.fds_writer import \
   FDSWriter
 from tests.test_fds_avro.utils.fds_benchmark_utils import \
   get_dataset, get_features_from_data_source, run_fds_benchmark_from_data_source

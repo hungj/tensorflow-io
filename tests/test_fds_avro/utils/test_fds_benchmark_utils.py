@@ -21,11 +21,11 @@ import tempfile
 import tensorflow as tf
 
 from tests.test_fds_avro.utils.fds_benchmark_utils import convert_schema_to_data_source
-from tensorflow_io.core.python.experimental.benchmark.generator.tensor_generator import \
+from tensorflow_io.python.experimental.benchmark.generator.tensor_generator import \
   IntTensorGenerator, WordTensorGenerator
-from tensorflow_io.core.python.experimental.benchmark.generator.sparse_tensor_generator import \
+from tensorflow_io.python.experimental.benchmark.generator.sparse_tensor_generator import \
   IntSparseTensorGenerator, FloatSparseTensorGenerator, BoolSparseTensorGenerator
-from tensorflow_io.core.python.experimental.benchmark.generator.varlen_tensor_generator import \
+from tensorflow_io.python.experimental.benchmark.generator.varlen_tensor_generator import \
   IntVarLenTensorGenerator, FloatVarLenTensorGenerator, BoolVarLenTensorGenerator
 
 def test_convert_schema_to_data_source():

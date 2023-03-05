@@ -18,9 +18,9 @@ import pytest
 import os
 import tensorflow as tf
 
-from tensorflow_io.core.python.experimental.benchmark.data_source import \
+from tensorflow_io.python.experimental.benchmark.data_source import \
   DataSource
-from tensorflow_io.core.python.experimental.benchmark.generator.\
+from tensorflow_io.python.experimental.benchmark.generator.\
   tensor_generator import IntTensorGenerator
 
 from tests.test_fds_avro.utils.fds_benchmark_utils import \
