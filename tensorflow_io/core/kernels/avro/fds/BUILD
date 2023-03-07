@@ -38,7 +38,7 @@ cc_library(
     alwayslink = 1,
 )
 
-cc_library(
+cc_test(
     name = "avro_fds_tests",
     srcs = [
         "decoder_test_util.h",
